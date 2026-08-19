@@ -1,0 +1,34 @@
+
+1. Aim
+
+To perform arithmetic operations using Python.
+
+2. Algorithm
+
+1. Start the program.
+2. Assign two numbers to variables.
+3. Perform addition, subtraction, multiplication, division, modulus, floor division, and exponentiation.
+4. Display the results.
+5. Stop the program.
+
+3. Source Code
+
+a = 10
+b = 3
+print("Addition =", a + b)
+print("Subtraction =", a - b)
+print("Multiplication =", a * b)
+print("Division =", a / b)
+print("Modulus =", a % b)
+print("Floor Division =", a // b)
+print("Exponentiation =", a ** b)
+
+4. Output
+
+Addition = 13
+Subtraction = 7
+Multiplication = 30
+Division = 3.3333333333333335
+Modulus = 1
+Floor Division = 3
+Exponentiation = 1000
