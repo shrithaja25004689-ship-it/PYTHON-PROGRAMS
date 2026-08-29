@@ -1,0 +1,105 @@
+Aim
+
+To calculate the batting strike rate and bowling economy rate of a cricket player and classify the player's batting, bowling, fielding, and overall performance using branching statements (if-elif-else). 
+
+Algorithm
+
+1. Start the program.
+
+
+2. Enter runs scored, balls faced, wickets taken, runs conceded, overs bowled, and catches taken.
+
+
+3. Calculate Strike Rate = (Runs Scored / Balls Faced) × 100.
+
+
+4. Calculate Economy Rate = Runs Conceded / Overs Bowled.
+
+
+5. Classify batting performance using if-elif-else statements.
+
+
+6. Classify bowling performance using if-elif-else statements.
+
+
+7. Classify fielding performance using if-elif-else statements.
+
+
+8. Determine the overall all-rounder category.
+
+
+9. Display the results.
+
+
+10. Stop the program.
+
+
+
+Source Code
+
+runs = int(input("Enter runs scored: "))
+balls = int(input("Enter balls faced: "))
+wickets = int(input("Enter wickets taken: "))
+runs_conceded = int(input("Enter runs conceded: "))
+overs = int(input("Enter overs bowled: "))
+catches = int(input("Enter catches taken: "))
+
+strike_rate = (runs / balls) * 100
+economy = runs_conceded / overs
+
+if runs >= 50 and strike_rate >= 120:
+    batter = "Excellent Batter"
+elif runs >= 30 and strike_rate >= 100:
+    batter = "Good Batter"
+elif runs >= 20:
+    batter = "Average Batter"
+else:
+    batter = "Poor Batter"
+
+if wickets >= 3 and economy <= 6:
+    bowler = "Excellent Bowler"
+elif wickets >= 2 and economy <= 8:
+    bowler = "Good Bowler"
+elif wickets >= 1:
+    bowler = "Average Bowler"
+else:
+    bowler = "Poor Bowler"
+
+if catches >= 2:
+    fielder = "Outstanding Fielder"
+elif catches == 1:
+    fielder = "Active Fielder"
+else:
+    fielder = "Needs Improvement"
+
+if batter == "Excellent Batter" and bowler == "Excellent Bowler":
+    overall = "Star All-Rounder"
+elif batter == "Good Batter" and bowler == "Good Bowler":
+    overall = "Strong All-Rounder"
+elif batter == "Good Batter" or bowler == "Good Bowler":
+    overall = "Supporting All-Rounder"
+else:
+    overall = "Needs Improvement"
+
+print("Strike Rate =", strike_rate)
+print("Economy Rate =", economy)
+print("Batting Performance =", batter)
+print("Bowling Performance =", bowler)
+print("Fielding Performance =", fielder)
+print("Overall Performance =", overall)
+
+Output
+
+Enter runs scored: 148
+Enter balls faced: 50
+Enter wickets taken: 4
+Enter runs conceded: 29
+Enter overs bowled: 2
+Enter catches taken: 3
+
+Strike Rate = 296.0
+Economy Rate = 14.5
+Batting Performance = Excellent Batter
+Bowling Performance = Average Bowler
+Fielding Performance = Outstanding Fielder
+Overall Performance = Needs Improvement
