@@ -1,148 +1,129 @@
-Aim
+1.Aim
 
-To demonstrate various data types and operators in Python by writing and executing a simple Python program.
+To write a Python program demonstrating the different types of operators in Python, such as arithmetic, relational, logical, assignment, bitwise, membership, and identity operators.
 
-Algorithm
-Start the program.
-Declare variables using different Python data types:
-Integer
-Float
-Complex
-String
-Boolean
-List
-Tuple
-Set
-Dictionary
-Display the values and their data types.
-Demonstrate arithmetic operators such as +, -, *, /, %, //, and **.
-Demonstrate comparison operators such as >, <, ==, and !=.
-Demonstrate logical operators such as and, or, and not.
-Demonstrate assignment operators such as += and -=.
-Demonstrate membership operators in and not in.
-Demonstrate identity operators is and is not.
-Display the results.
-Stop the program.
-Source Code
-# Program to demonstrate various data types and operators in Python
+2.Algorithm
 
-# Different data types
-integer_num = 10
-float_num = 5.5
-complex_num = 2 + 3j
-string_value = "Python"
-boolean_value = True
-list_value = [1, 2, 3]
-tuple_value = (10, 20, 30)
-set_value = {1, 2, 3}
-dictionary_value = {"name": "John", "age": 20}
+1.Start the program.
+2.Declare two variables a and b.
+3.Perform arithmetic operations such as addition, subtraction, multiplication, division, modulus, exponentiation, and floor division.
+4.Perform relational (comparison) operations such as greater than, less than, equal to, and not equal to.
+5.Perform logical operations using and, or, and not.
+6.Perform assignment operations.
+7.Perform bitwise operations such as AND, OR, XOR, and NOT.
+8.Demonstrate membership operators in and not in.
+9.Demonstrate identity operators is and is not.
+10.Display the results.
+11.Stop the program.
 
-# Display data types
-print("DATA TYPES")
-print("Integer:", integer_num, type(integer_num))
-print("Float:", float_num, type(float_num))
-print("Complex:", complex_num, type(complex_num))
-print("String:", string_value, type(string_value))
-print("Boolean:", boolean_value, type(boolean_value))
-print("List:", list_value, type(list_value))
-print("Tuple:", tuple_value, type(tuple_value))
-print("Set:", set_value, type(set_value))
-print("Dictionary:", dictionary_value, type(dictionary_value))
+3.Source Code
 
-# Arithmetic operators
 a = 10
 b = 3
 
-print("\nARITHMETIC OPERATORS")
-print("a + b =", a + b)
-print("a - b =", a - b)
-print("a * b =", a * b)
-print("a / b =", a / b)
-print("a % b =", a % b)
-print("a // b =", a // b)
-print("a ** b =", a ** b)
+# Arithmetic Operators
+print("Arithmetic Operators")
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Modulus:", a % b)
+print("Exponentiation:", a ** b)
+print("Floor Division:", a // b)
 
-# Comparison operators
-print("\nCOMPARISON OPERATORS")
-print("a > b  =", a > b)
-print("a < b  =", a < b)
-print("a == b =", a == b)
-print("a != b =", a != b)
+# Relational / Comparison Operators
+print("\nRelational Operators")
+print("a > b:", a > b)
+print("a < b:", a < b)
+print("a == b:", a == b)
+print("a != b:", a != b)
+print("a >= b:", a >= b)
+print("a <= b:", a <= b)
 
-# Logical operators
+# Logical Operators
 x = True
 y = False
 
-print("\nLOGICAL OPERATORS")
-print("x and y =", x and y)
-print("x or y  =", x or y)
-print("not x   =", not x)
+print("\nLogical Operators")
+print("x and y:", x and y)
+print("x or y:", x or y)
+print("not x:", not x)
 
-# Assignment operators
+# Assignment Operators
 c = 10
 c += 5
-print("\nASSIGNMENT OPERATORS")
-print("c += 5 =", c)
+print("\nAssignment Operators")
+print("c += 5:", c)
+
 c -= 3
-print("c -= 3 =", c)
+print("c -= 3:", c)
 
-# Membership operators
-print("\nMEMBERSHIP OPERATORS")
-print("2 in list_value =", 2 in list_value)
-print("5 not in list_value =", 5 not in list_value)
+# Bitwise Operators
+print("\nBitwise Operators")
+print("a & b:", a & b)
+print("a | b:", a | b)
+print("a ^ b:", a ^ b)
+print("~a:", ~a)
+print("a << 1:", a << 1)
+print("a >> 1:", a >> 1)
 
-# Identity operators
-list1 = [1, 2, 3]
-list2 = list1
+# Membership Operators
+numbers = [1, 2, 3, 4, 5]
 
-print("\nIDENTITY OPERATORS")
-print("list1 is list2 =", list1 is list2)
-print("list1 is not list2 =", list1 is not list2)
+print("\nMembership Operators")
+print("3 in numbers:", 3 in numbers)
+print("6 not in numbers:", 6 not in numbers)
+
+# Identity Operators
+p = [1, 2, 3]
+q = p
+r = [1, 2, 3]
+
+print("\nIdentity Operators")
+print("p is q:", p is q)
+print("p is r:", p is r)
+print("p is not r:", p is not r)
 
 Output
-DATA TYPES
-Integer: 10 <class 'int'>
-Float: 5.5 <class 'float'>
-Complex: (2+3j) <class 'complex'>
-String: Python <class 'str'>
-Boolean: True <class 'bool'>
-List: [1, 2, 3] <class 'list'>
-Tuple: (10, 20, 30) <class 'tuple'>
-Set: {1, 2, 3} <class 'set'>
-Dictionary: {'name': 'John', 'age': 20} <class 'dict'>
+Arithmetic Operators
+Addition: 13
+Subtraction: 7
+Multiplication: 30
+Division: 3.3333333333333335
+Modulus: 1
+Exponentiation: 1000
+Floor Division: 3
 
-ARITHMETIC OPERATORS
-a + b = 13
-a - b = 7
-a * b = 30
-a / b = 3.3333333333333335
-a % b = 1
-a // b = 3
-a ** b = 1000
+Relational Operators
+a > b: True
+a < b: False
+a == b: False
+a != b: True
+a >= b: True
+a <= b: False
 
-COMPARISON OPERATORS
-a > b  = True
-a < b  = False
-a == b = False
-a != b = True
+Logical Operators
+x and y: False
+x or y: True
+not x: False
 
-LOGICAL OPERATORS
-x and y = False
-x or y  = True
-not x   = False
+Assignment Operators
+c += 5: 15
+c -= 3: 12
 
-ASSIGNMENT OPERATORS
-c += 5 = 15
-c -= 3 = 12
+Bitwise Operators
+a & b: 2
+a | b: 11
+a ^ b: 9
+~a: -11
+a << 1: 20
+a >> 1: 5
 
-MEMBERSHIP OPERATORS
-2 in list_value = True
-5 not in list_value = True
+Membership Operators
+3 in numbers: True
+6 not in numbers: True
 
-IDENTITY OPERATORS
-list1 is list2 = True
-list1 is not list2 = False
-
-Result
-
-Thus, the various data types and operators in Python were successfully demonstrated and their outputs were verified.
+Identity Operators
+p is q: True
+p is r: False
+p is not r: True
