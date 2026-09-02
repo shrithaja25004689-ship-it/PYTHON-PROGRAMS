@@ -1,34 +1,148 @@
+Aim
 
-1. Aim
+To demonstrate various data types and operators in Python by writing and executing a simple Python program.
 
-To perform arithmetic operations using Python.
+Algorithm
+Start the program.
+Declare variables using different Python data types:
+Integer
+Float
+Complex
+String
+Boolean
+List
+Tuple
+Set
+Dictionary
+Display the values and their data types.
+Demonstrate arithmetic operators such as +, -, *, /, %, //, and **.
+Demonstrate comparison operators such as >, <, ==, and !=.
+Demonstrate logical operators such as and, or, and not.
+Demonstrate assignment operators such as += and -=.
+Demonstrate membership operators in and not in.
+Demonstrate identity operators is and is not.
+Display the results.
+Stop the program.
+Source Code
+# Program to demonstrate various data types and operators in Python
 
-2. Algorithm
+# Different data types
+integer_num = 10
+float_num = 5.5
+complex_num = 2 + 3j
+string_value = "Python"
+boolean_value = True
+list_value = [1, 2, 3]
+tuple_value = (10, 20, 30)
+set_value = {1, 2, 3}
+dictionary_value = {"name": "John", "age": 20}
 
-1. Start the program.
-2. Assign two numbers to variables.
-3. Perform addition, subtraction, multiplication, division, modulus, floor division, and exponentiation.
-4. Display the results.
-5. Stop the program.
+# Display data types
+print("DATA TYPES")
+print("Integer:", integer_num, type(integer_num))
+print("Float:", float_num, type(float_num))
+print("Complex:", complex_num, type(complex_num))
+print("String:", string_value, type(string_value))
+print("Boolean:", boolean_value, type(boolean_value))
+print("List:", list_value, type(list_value))
+print("Tuple:", tuple_value, type(tuple_value))
+print("Set:", set_value, type(set_value))
+print("Dictionary:", dictionary_value, type(dictionary_value))
 
-3. Source Code
-
+# Arithmetic operators
 a = 10
 b = 3
-print("Addition =", a + b)
-print("Subtraction =", a - b)
-print("Multiplication =", a * b)
-print("Division =", a / b)
-print("Modulus =", a % b)
-print("Floor Division =", a // b)
-print("Exponentiation =", a ** b)
 
-4. Output
+print("\nARITHMETIC OPERATORS")
+print("a + b =", a + b)
+print("a - b =", a - b)
+print("a * b =", a * b)
+print("a / b =", a / b)
+print("a % b =", a % b)
+print("a // b =", a // b)
+print("a ** b =", a ** b)
 
-Addition = 13
-Subtraction = 7
-Multiplication = 30
-Division = 3.3333333333333335
-Modulus = 1
-Floor Division = 3
-Exponentiation = 1000
+# Comparison operators
+print("\nCOMPARISON OPERATORS")
+print("a > b  =", a > b)
+print("a < b  =", a < b)
+print("a == b =", a == b)
+print("a != b =", a != b)
+
+# Logical operators
+x = True
+y = False
+
+print("\nLOGICAL OPERATORS")
+print("x and y =", x and y)
+print("x or y  =", x or y)
+print("not x   =", not x)
+
+# Assignment operators
+c = 10
+c += 5
+print("\nASSIGNMENT OPERATORS")
+print("c += 5 =", c)
+c -= 3
+print("c -= 3 =", c)
+
+# Membership operators
+print("\nMEMBERSHIP OPERATORS")
+print("2 in list_value =", 2 in list_value)
+print("5 not in list_value =", 5 not in list_value)
+
+# Identity operators
+list1 = [1, 2, 3]
+list2 = list1
+
+print("\nIDENTITY OPERATORS")
+print("list1 is list2 =", list1 is list2)
+print("list1 is not list2 =", list1 is not list2)
+
+Output
+DATA TYPES
+Integer: 10 <class 'int'>
+Float: 5.5 <class 'float'>
+Complex: (2+3j) <class 'complex'>
+String: Python <class 'str'>
+Boolean: True <class 'bool'>
+List: [1, 2, 3] <class 'list'>
+Tuple: (10, 20, 30) <class 'tuple'>
+Set: {1, 2, 3} <class 'set'>
+Dictionary: {'name': 'John', 'age': 20} <class 'dict'>
+
+ARITHMETIC OPERATORS
+a + b = 13
+a - b = 7
+a * b = 30
+a / b = 3.3333333333333335
+a % b = 1
+a // b = 3
+a ** b = 1000
+
+COMPARISON OPERATORS
+a > b  = True
+a < b  = False
+a == b = False
+a != b = True
+
+LOGICAL OPERATORS
+x and y = False
+x or y  = True
+not x   = False
+
+ASSIGNMENT OPERATORS
+c += 5 = 15
+c -= 3 = 12
+
+MEMBERSHIP OPERATORS
+2 in list_value = True
+5 not in list_value = True
+
+IDENTITY OPERATORS
+list1 is list2 = True
+list1 is not list2 = False
+
+Result
+
+Thus, the various data types and operators in Python were successfully demonstrated and their outputs were verified.
