@@ -1,8 +1,8 @@
-Aim
+1.Aim
 
 To calculate the batting strike rate and bowling economy rate of a cricket player and classify the player's batting, bowling, fielding, and overall performance using branching statements (if-elif-else). 
 
-Algorithm
+2.Algorithm
 
 1. Start the program.
 
@@ -35,7 +35,7 @@ Algorithm
 
 
 
-Source Code
+3.Source Code
 
 runs = int(input("Enter runs scored: "))
 balls = int(input("Enter balls faced: "))
@@ -88,7 +88,7 @@ print("Bowling Performance =", bowler)
 print("Fielding Performance =", fielder)
 print("Overall Performance =", overall)
 
-Output
+4.Output
 
 Enter runs scored: 148
 Enter balls faced: 50
