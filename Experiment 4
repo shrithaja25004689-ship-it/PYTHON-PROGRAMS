@@ -1,0 +1,77 @@
+1.Aim
+
+To write and execute a Python program to demonstrate list and it's related functions
+
+2.Algorithm
+
+1.Start the program.
+2.Create a list containing the elements [150, 40, 90, 10, 100, 50].
+3.Find and display the length of the list using the len() function.
+4.Add the element 140 to the end of the list using append().
+5.Insert the element 200 at index 1 using insert().
+6.Remove the element 10 from the list using remove().
+7.Remove the last element from the list using pop().
+8.Count the number of occurrences of 40 using count().
+9.Find the index position of 90 using index().
+10.Arrange the elements in ascending order using sort().
+11.Reverse the order of the elements using reverse().
+12.Create a copy of the list using copy().
+13.Add the elements 30 and 11 to the list using extend().
+14.Find and display the largest element using max().
+15.Find and display the smallest element using min().
+16.Calculate and display the sum of all elements using sum().
+17.Remove all elements from the list using clear().
+18.Display the cleared list.
+19.Stop the program
+
+3.Source Code
+
+list = [150,40,90,10,100,50]
+a= len(list)
+print ("The length of the string:",a)
+list.append(140)
+print("The element added is:",list)
+list.insert(1,200)
+print ("After insertion:",list)
+list.remove(10)
+print ("After deletion:",list)
+list.pop()
+print ("After popping element:",list)
+b = list.count(40)
+print("After count:",b)
+c = list.index(90)
+print("The index is:",c)
+list.sort()
+print("The sorted list is:",list)
+list.reverse()
+print("The reversed list is:",list)
+new_list = list.copy()
+print("The copied list is:",list)
+list.extend([30,11])
+print("The extended list is:",list)
+d= max(list)
+print("The greatest element is:",d)
+e= min(list)
+print("The smallest element is:",e)
+f = sum(list)
+print("The sum of list is:",f)
+list.clear()
+print("The cleared list is:",list)
+
+4.Output
+
+The length of the string: 6
+The element added is: [150, 40, 90, 10, 100, 50, 140]
+After insertion: [150, 200, 40, 90, 10, 100, 50, 140]
+After deletion: [150, 200, 40, 90, 100, 50, 140]
+After popping element: [150, 200, 40, 90, 100, 50]
+After count: 1
+The index is: 3
+The sorted list is: [40, 50, 90, 100, 150, 200]
+The reversed list is: [200, 150, 100, 90, 50, 40]
+The copied list is: [200, 150, 100, 90, 50, 40]
+The extended list is: [200, 150, 100, 90, 50, 40, 30, 11]
+The greatest element is: 200
+The smallest element is: 11
+The sum of list is: 671
+The cleared list is: []
