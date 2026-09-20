@@ -33,7 +33,7 @@ print("Slice:",s[6:])
 print("Replace:",s.replace("Python","World"))
 print(s)
 print("Contains Python:","Python" in s)
-print("Concentration:",s+" Programming")
+print("Concatination:",s+" Programming")
 s2="  Hello World   "
 print("Trim:",s2.strip())
 
