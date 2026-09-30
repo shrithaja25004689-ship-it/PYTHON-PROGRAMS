@@ -1,0 +1,53 @@
+1.Aim
+
+To write a python program to implement various string operations.
+
+2.Algorithm
+
+1.Start the program.
+2.Create a string variable s = "Hello Python".
+3.Display the original string.
+4.Find and display the length of the string.
+5.Convert the string to uppercase and display it.
+6.Convert the string to lowercase and display it.
+7.Access and display the character at index 6.
+8.Find the position of the word "Python" in the string.
+9.Extract and display a substring using slicing.
+10.Replace "Python" with "World" and display the result.
+11.Check wheather "Python" is present in the string.
+12.Concatenate another string to the original string and display it.
+13.Create a string with extra spaces and remove leading and trailing spaces using strip().
+14.Display the trimmed string.
+15.Stop the program.
+
+3.Source Code 
+
+s="Hello Python"
+print("Original String:",s)
+print("Length:",len(s))
+print("Uppercase:",s.upper())
+print("Lowercase:",s.lower())
+print("Character at index 6:",s[6])
+print("Position of python:",s.find("Python"))
+print("Slice:",s[6:])
+print("Replace:",s.replace("Python","World"))
+print(s)
+print("Contains Python:","Python" in s)
+print("Concatination:",s+" Programming")
+s2="  Hello World   "
+print("Trim:",s2.strip())
+
+4.Output
+
+Original String: Hello Python
+Length: 12
+Uppercase: HELLO PYTHON
+Lowercase: hello python
+Character at index 6: P
+Position of python: 6
+Slice: Python
+Replace: Hello World
+Hello Python
+Contains Python: True
+Concentration: Hello Python Programming
+Trim: Hello World
