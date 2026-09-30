@@ -4,5 +4,76 @@ Write a program to demostrate tuple and related functions in python
 
 2.ALOGORITHM
 
-1)
-  
+i)
+  1.Start
+  2.Create a tuple t with elements (10, 20, 30, 20, 40).
+  3.Print the original tuple t.
+  4.Access and print the first element (t[0]) and the last element (t[-1]).
+  5.Calculate and print the length of the tuple using len(t).
+  6.Count occurrences of 20 using t.count(20) and find the index of 30 using t.index(30).
+  7.Compute and print the maximum, minimum, and sum of elements in t.
+  8.Check if 40 exists in t using 40 in t and display the boolean result.
+  9.Convert tuple t into a list l using list(t) and print it.
+  10.Convert list l back into a tuple t2 using tuple(l) and print it.
+  11.Stop
+
+ii)
+  1.Start
+  2.Define a function Empcal():
+  3.Accept Name (string), Age (integer), and basic salary Sal (float) from the user.
+  4.Calculate HRA as (35 * Sal) / 100.
+  5.Calculate PF as (25 * Sal) / 100.
+  6.Calculate NetSalary as HRA + PF + Sal.
+  7.If NetSalary is between 50000 and 100000 (inclusive), print "Senior Manager".
+  8.Else if NetSalary is between 20000 and 49000 (inclusive), print " Manager".
+  9.Else, print "Front Level Job".
+  10.Return Name, Age, and NetSalary.
+  11.Call Empcal() and assign the returned values to Name, Age, and NetSalary.
+  12.Print the employee's Name, Age, and calculated NetSalary.
+  13.Stop
+
+
+3.Source Code
+
+i)
+t=(10,20,30,20,40)
+print("Tuple:",t)
+print("First element:",t[0])
+print("Last element:",t[-1])
+print("Length:",len(t))
+print("Count of 20:",t.count(20))
+print("Index of 30:",t.index(30))
+print("Maximum:",max(t))
+print("Manimum:",min(t))
+print("Sum:",sum(t))
+print("Is 40 present?",40 in t)
+l=list(t)
+print("Tuple conveted to list:",l)
+t2=tuple(l)
+print("List converted to tuple:",t2)
+
+ii)
+def Empcal():
+    Name=input("Enter your name:")
+    Age=int(input("Enter Age:"))
+    Sal=float(input("Enter your Salary:"))
+    HRA=(35*Sal)/100
+    PF=(25*Sal)/100
+    NetSalary= HRA+PF+Sal
+    
+    if (NetSalary>=50000) and (NetSalary<=100000):
+        print("Senior Manager")
+    elif (NetSalary>=20000) and (NetSalary<=49000):
+        print(" Manager")
+    else:
+        print("Front Level Job")
+    return Name, Age, NetSalary
+
+Name, Age, NetSalary = Empcal()
+
+print("Employee Name:",Name)
+print("Employee Age:",Age)
+print("Employee Salary:",NetSalary)
+
+
+4.Output
