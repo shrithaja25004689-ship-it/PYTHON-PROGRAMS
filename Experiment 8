@@ -1,0 +1,64 @@
+1.Aim
+
+Implement 're' module in python.
+
+
+2.Algorithm
+
+i)
+1.Start the program.
+2.Import the `re` module.
+3.Get the date as input from the user.
+4.Define a regular expression pattern to check the date format `DD/MM/YYYY`.
+5.Use `re.fullmatch()` to match the pattern with the given date.
+6.If the pattern matches, display "Given valid date".
+7.Otherwise, display "Invalid".
+8.Stop the program.
+
+ii)
+1.Start the program.
+2.Import the `re` module.
+3.Get an email ID or mobile number as input from the user.
+4.Define a regular expression pattern for the email ID.
+5.Define a regular expression pattern for a 10-digit mobile number.
+6.Use `re.fullmatch()` to check the input.
+7.If the email pattern matches, display "Valid Email ID".
+8.If the mobile pattern matches, display "Valid Mobile Number".
+9.Otherwise, display "Invalid Email or Mobile Number".
+10.Stop the program.
+
+
+3.Source Code
+
+i)
+import re
+date = input("Enter Date: ")
+pattern = r'^\d{2}/\d{2}/\d{4}$'
+pat = re.fullmatch(pattern, date)
+if pat:
+    print("Given valid date")
+else:
+    print("Invalid")
+
+ii)
+import re
+data = input("Enter Email or Mobile Number: ")
+email_pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$'
+mobile_pattern = r'^[0-9]{10}$'
+if re.fullmatch(email_pattern, data):
+    print("Valid Email ID")
+elif re.fullmatch(mobile_pattern, data):
+    print("Valid Mobile Number")
+else:
+    print("Invalid Email or Mobile Number")
+
+
+4.Output
+
+i)
+Enter Date: 30/07/2007
+Given valid date
+
+ii)
+Enter Email or Mobile Number: abc@gmail.com
+Valid Email ID
