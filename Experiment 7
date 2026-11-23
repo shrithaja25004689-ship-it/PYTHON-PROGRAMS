@@ -29,6 +29,28 @@ iii)
 5.Call the method and display the result.
 6.Stop the program.
 
+iv)
+1.Start the program.
+2.Create a class named op.
+3.Enter the values of x and y.
+4.Define methods for addition, subtraction, multiplication, division and modulus.
+5.Create an object of the class.
+6.Call all the methods using the object.
+7.Display the results.
+8.Stop the program.
+
+v)
+1.Start the program.
+2.Create a class named stud.
+3.Enter the marks of five subjects.
+4.Calculate the total and average.
+5.Define a method to display the total and average.
+6.Define a method to calculate the grade using if-elif-else conditions.
+7.Create an object of the class.
+8.Call the methods using the object.
+9.Display the result.
+10.Stop the program.
+
 
 3.Source Code:
 
@@ -62,6 +84,60 @@ class Addition:
 obj = Addition()
 obj.add(10, 20)
 
+iv)
+class op:
+    x = int(input("Enter the value of x:"))
+    y = int(input("Enter the value of y:"))
+
+    def add(self):
+        print("Addition:", self.x + self.y)
+
+    def sub(self):
+        print("Subtraction:", self.x - self.y)
+
+    def mul(self):
+        print("Multiplication:", self.x * self.y)
+
+    def div(self):
+        print("Division:", self.x / self.y)
+
+    def mod(self):
+        print("Modulus:", self.x % self.y)
+
+s = op()
+s.add()
+s.sub()
+s.mul()
+s.div()
+s.mod()
+
+v)class stud:
+    m1 = int(input("Enter marks1"))
+    m2 = int(input("Enter marks2"))
+    m3 = int(input("Enter marks3"))
+    m4 = int(input("Enter marks4"))
+    m5 = int(input("Enter marks5"))
+    total = m1 + m2 + m3 + m4 + m5
+    avg = total / 5
+
+    def findper(self):
+        print("Total =", self.total)
+        print("Avg =", self.avg)
+
+    def grade(self):
+        if (self.avg >= 90 and self.avg <= 100):
+            print("Grade 1")
+        elif (self.avg >= 70 and self.avg <= 89):
+            print("Grade 2nd")
+        elif (self.avg >= 45 and self.avg <= 69):
+            print("Grade 3rd")
+        else:
+            print("Grade 4th")
+
+a = stud()
+a.findper()
+a.grade()
+
 
 4.Output:
 
@@ -76,57 +152,21 @@ Dog barks
 iii)
 Sum = 30
 
+iv)
+Enter the value of x: 5
+Enter the value of y: 2
+Addition: 7
+Subtraction: 3
+Multiplication: 10
+Division: 2.5
+Modulus: 1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+v)
+Enter marks1 45
+Enter marks2 50
+Enter marks3 66
+Enter marks4 78
+Enter marks5 90
+Total = 329
+Avg = 65.8
+Grade 3rd
