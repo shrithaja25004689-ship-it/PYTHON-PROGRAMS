@@ -1,0 +1,171 @@
+10.a.
+
+1.Aim
+
+Write a program to load,clean and exploring the data using python.
+
+2.Algorithm
+
+1.Start the program.
+2.Import Pandas and NumPy libraries.
+3.Create a dataset containing Team, Runs and Wickets.
+4.Convert the dataset into a DataFrame.
+5.Display the original data.
+6.Check for missing values.
+7.Replace missing values with the mean.
+8.Display the cleaned data.
+9.Display the first five rows.
+10.Display information and statistical summary.
+11.Display the shape of the DataFrame.
+12.Stop the program.
+
+3.Source Code
+
+import pandas as pd
+import numpy as np
+# Load Data
+data = {
+    "Team": ["CSK", "MI", "RCB", "KKR", "CSK"],
+    "Runs": [180, np.nan, 200, 175, 190],
+    "Wickets": [5, 7, None, 6, 8]
+}
+df = pd.DataFrame(data)
+print("Original Data:\n", df)
+# Check Missing Values
+print("\nMissing Values:\n", df.isna().sum())
+# Clean Data
+df["Runs"] = df["Runs"].fillna(df["Runs"].mean())
+df["Wickets"] = df["Wickets"].fillna(df["Wickets"].mean())
+print("\nAfter Cleaning\n", df)
+# Explore Data
+print("\nFirst 5 Rows:\n", df.head())
+print("\nInfo:")
+df.info()
+print("\nStatistical Summary\n", df.describe())
+print("\nShape (rows, columns):", df.shape)
+
+4.Output
+
+Original Data:
+  Team   Runs  Wickets
+0  CSK  180.0      5.0
+1   MI    NaN      7.0
+2  RCB  200.0      NaN
+3  KKR  175.0      6.0
+4  CSK  190.0      8.0
+
+Missing Values:
+Team       0
+Runs       1
+Wickets    1
+
+After Cleaning
+  Team    Runs  Wickets
+0  CSK  180.00      5.0
+1   MI  186.25      7.0
+2  RCB  200.00      6.5
+3  KKR  175.00      6.0
+4  CSK  190.00      8.0
+
+First 5 Rows:
+  Team    Runs  Wickets
+0  CSK  180.00      5.0
+1   MI  186.25      7.0
+2  RCB  200.00      6.5
+3  KKR  175.00      6.0
+4  CSK  190.00      8.0
+
+Info:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 5 entries, 0 to 4
+Data columns (total 3 columns):
+Team       5 non-null object
+Runs       5 non-null float64
+Wickets    5 non-null float64
+
+Statistical Summary:
+             Runs   Wickets
+count     5.000000  5.000000
+mean    186.250000  6.500000
+std       9.601432  1.118034
+min     175.000000  5.000000
+25%     180.000000  6.000000
+50%     186.250000  6.500000
+75%     190.000000  7.000000
+max     200.000000  8.000000
+
+Shape (rows, columns): (5, 3)
+
+
+
+10.b.
+
+1.Aim
+
+Write a program to implement various types of visualization in python.
+
+2.Algorithm
+
+1.Start the program
+2.Import Pandas and Matplotlib libraries.
+3.Create a sample dataset containing Month and Sales.
+4.Create a line plot to represent monthly sales.
+5.Create a bar plot to compare monthly sales.
+6.Create a scatter plot to display the relationship between month and sales.
+7.Create a histogram to show sales distribution.
+8.Create a pie chart to represent sales share.
+9.Display all the visualizations.
+10.Stop the program
+
+3.Source Code
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample Data
+df = pd.DataFrame({
+    "Month": ["Jan", "Feb", "Mar", "Apr"],
+    "Sales": [200, 250, 300, 290]
+})
+
+# Line Plot
+plt.figure()
+plt.plot(df["Month"], df["Sales"])
+plt.title("Line Plot - Monthly Sales")
+plt.xlabel("Month")
+plt.ylabel("Sales")
+plt.show()
+
+# Bar Plot
+plt.figure()
+plt.bar(df["Month"], df["Sales"])
+plt.title("Bar Plot - Monthly Sales")
+plt.xlabel("Month")
+plt.ylabel("Sales")
+plt.show()
+
+# Scatter Plot
+plt.figure()
+plt.scatter(df["Month"], df["Sales"])
+plt.title("Scatter Plot - Monthly Sales")
+plt.xlabel("Month")
+plt.ylabel("Sales")
+plt.show()
+
+# Histogram
+plt.figure()
+plt.hist(df["Sales"])
+plt.title("Histogram - Sales Distribution")
+plt.xlabel("Sales")
+plt.ylabel("Frequency")
+plt.show()
+
+# Pie Chart
+plt.figure()
+plt.pie(df["Sales"], labels=df["Month"],
+        autopct="%1.1f%%")
+plt.title("Pie Chart - Sales Share")
+plt.show()
+
+4.Output
+
