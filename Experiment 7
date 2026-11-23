@@ -1,8 +1,8 @@
-1.Aim:
+1.Aim
 Demonstrate use of object-oriented programming concepts.
 
 
-2.Algorithm:
+2.Algorithm
 
 i)
 1.Start the program.
@@ -52,7 +52,7 @@ v)
 10.Stop the program.
 
 
-3.Source Code:
+3.Source Code
 
 i)
 class Student:
@@ -139,7 +139,7 @@ a.findper()
 a.grade()
 
 
-4.Output:
+4.Output
 
 i)
 Name: Rahul
