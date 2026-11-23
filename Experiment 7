@@ -1,4 +1,160 @@
 Aim:
 Demonstrate use of object-oriented programming concepts.
 
+Algorithm:
+
+i)
+1.Start the program.
+
+* Create a class named Student.
+
+* Define a method to display student details.
+
+* Create an object of the class.
+
+* Call the method using the object.
+
+* Stop the program.
+
+Source Code:
+
+```python
+class Student:
+    def display(self):
+        print("Name: Rahul")
+        print("Age: 20")
+
+s1 = Student()
+s1.display()
+```
+
+Output:
+
+```text
+Name: Rahul
+Age: 20
+```
+
+### Program 2: Inheritance
+
+Algorithm:
+
+* Start the program.
+
+* Create a parent class named Animal.
+
+* Define a method in the parent class.
+
+* Create a child class named Dog.
+
+* Inherit the parent class.
+
+* Create an object and call the method.
+
+* Stop the program.
+
+Source Code:
+
+```python
+class Animal:
+    def sound(self):
+        print("Animals make sounds")
+
+class Dog(Animal):
+    def bark(self):
+        print("Dog barks")
+
+d = Dog()
+d.sound()
+d.bark()
+```
+
+Output:
+
+```text
+Animals make sounds
+Dog barks
+```
+
+### Program 3: Polymorphism
+
+Algorithm:
+
+* Start the program.
+
+* Create a class named Addition.
+
+* Define a method named add().
+
+* Pass two numbers as arguments.
+
+* Call the method and display the result.
+
+* Stop the program.
+
+Source Code:
+
+```python
+class Addition:
+    def add(self, a, b):
+        print("Sum =", a + b)
+
+obj = Addition()
+obj.add(10, 20)
+```
+
+Output:
+
+Sum = 30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
