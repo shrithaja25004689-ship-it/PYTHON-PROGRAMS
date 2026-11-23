@@ -1,24 +1,38 @@
-Aim:
+1.Aim:
 Demonstrate use of object-oriented programming concepts.
 
-Algorithm:
+
+2.Algorithm:
 
 i)
 1.Start the program.
+2.Create a class named Student.
+3.Define a method to display student details.
+4.Create an object of the class.
+5.Call the method using the object.
+6.Stop the program.
 
-* Create a class named Student.
+ii)
+1.Start the program.
+2.Create a parent class named Animal.
+3.Define a method in the parent class.
+4.Create a child class named Dog.
+5.Inherit the parent class.
+6.Create an object and call the method.
+7.Stop the program.
 
-* Define a method to display student details.
+iii)
+1.Start the program.
+2.Create a class named Addition.
+3.Define a method named add().
+4.Pass two numbers as arguments.
+5.Call the method and display the result.
+6.Stop the program.
 
-* Create an object of the class.
 
-* Call the method using the object.
+3.Source Code:
 
-* Stop the program.
-
-Source Code:
-
-```python
+i)
 class Student:
     def display(self):
         print("Name: Rahul")
@@ -26,36 +40,8 @@ class Student:
 
 s1 = Student()
 s1.display()
-```
 
-Output:
-
-```text
-Name: Rahul
-Age: 20
-```
-
-### Program 2: Inheritance
-
-Algorithm:
-
-* Start the program.
-
-* Create a parent class named Animal.
-
-* Define a method in the parent class.
-
-* Create a child class named Dog.
-
-* Inherit the parent class.
-
-* Create an object and call the method.
-
-* Stop the program.
-
-Source Code:
-
-```python
+ii)
 class Animal:
     def sound(self):
         print("Animals make sounds")
@@ -67,45 +53,31 @@ class Dog(Animal):
 d = Dog()
 d.sound()
 d.bark()
-```
 
-Output:
-
-```text
-Animals make sounds
-Dog barks
-```
-
-### Program 3: Polymorphism
-
-Algorithm:
-
-* Start the program.
-
-* Create a class named Addition.
-
-* Define a method named add().
-
-* Pass two numbers as arguments.
-
-* Call the method and display the result.
-
-* Stop the program.
-
-Source Code:
-
-```python
+iii)
 class Addition:
     def add(self, a, b):
         print("Sum =", a + b)
 
 obj = Addition()
 obj.add(10, 20)
-```
 
-Output:
 
+4.Output:
+
+i)
+Name: Rahul
+Age: 20
+
+ii)
+Animals make sounds
+Dog barks
+
+iii)
 Sum = 30
+
+
+
 
 
 
